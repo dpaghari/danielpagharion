@@ -1,4 +1,5 @@
 import React from 'react';
+import Header from '../components/Header';
 import NavBar from '../components/NavBar';
 
 export default class Layout extends React.Component {
@@ -10,10 +11,8 @@ export default class Layout extends React.Component {
   render() {
     return (
       <div class="site-wrapper">
-      <h1>Daniel Pagharion</h1>
-      <h2>Web Developer</h2>
-        <NavBar/>
-        <div class="container">
+        <Header/>
+        <div class="container" id="content">
           {this.props.children}
         </div>
       </div>

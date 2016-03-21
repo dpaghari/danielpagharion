@@ -13,22 +13,26 @@ export default class NavBar extends React.Component {
     if(this.state.active){
       return (
           <nav id="site-nav" class="active">
-            <Link to="/">About</Link>
-            <Link to="projects">Projects</Link>
-            <Link to="contact">Contact Me</Link>
-            <Link to="resume">Resume</Link>
-            <a href="" onClick={this.toggleActive.bind(this)}>Close</a>
+            <div class="nav-links">
+            <Link to="/"><i class="fa fa-user"></i>About</Link>
+            <Link to="projects"><i class="fa fa-folder"></i>Projects</Link>
+            <Link to="contact"><i class="fa fa-envelope"></i>Contact Me</Link>
+            <Link to="resume"><i class="fa fa-file-text"></i>Resume</Link>
+            <a class="menu-btn" href="" onClick={this.toggleActive.bind(this)}><i class="fa fa-bars"></i></a>
+            </div>
           </nav>
       );
     }
     else {
       return (
           <nav id="site-nav">
-            <Link to="/">About</Link>
-            <Link to="projects">Projects</Link>
-            <Link to="contact">Contact Me</Link>
-            <Link to="resume">Resume</Link>
-            <a href="" onClick={this.toggleActive.bind(this)}>Open</a>
+            <div class="nav-links">
+            <Link to="/"><i class="fa fa-user"></i>About</Link>
+            <Link to="projects"><i class="fa fa-folder"></i>Projects</Link>
+            <Link to="contact"><i class="fa fa-envelope"></i>Contact Me</Link>
+            <Link to="resume"><i class="fa fa-file-text"></i>Resume</Link>
+            <a class="menu-btn" href="" onClick={this.toggleActive.bind(this)}><i class="fa fa-bars"></i></a>
+            </div>
           </nav>
       );
     }
@@ -37,6 +41,6 @@ export default class NavBar extends React.Component {
   toggleActive(e) {
     e.preventDefault();
     var currState = !this.state.active;
-    this.setState( { active: currState });
+    this.setState({ active: currState });
   }
 }
