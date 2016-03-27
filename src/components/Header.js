@@ -12,7 +12,7 @@ export default class Header extends React.Component {
 
   render() {
     return (
-      <section class="row" id="personal">
+      <section class="row" id="sticky-header">
       <NavBar/>
         <h1>Daniel Pagharion</h1>
         <h2>Web Developer</h2>

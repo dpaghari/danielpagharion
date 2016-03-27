@@ -8,12 +8,17 @@ export default class Resume extends React.Component {
 
   render() {
     return (
-        <section id="resume-section" class="container">
+        <section id="resume-section" class="wrapper container">
+          <div class="introduction">
           <h2>Daniel Pagharion</h2>
-          <div class="row">
-          <h3>Profile</h3>
+          <p>dspagharion@gmail.com</p>
+          <p>danielpagharion.com</p>
           </div>
-          <div class="row">
+          <div class="row resume-row">
+          <h3>Profile</h3>
+          <p>Excited to be looking for an opportunity to work on something that impacts the lives of countless people on a day to day basis.</p>
+          </div>
+          <div class="row resume-row">
           <h3>Professional Experience</h3>
           <h4>Front-End Web Developer</h4><span> May 2015 - Present </span>
           <h5>Tightrope Interactive Inc.</h5>
@@ -26,7 +31,7 @@ export default class Resume extends React.Component {
             <li>Underwent code reviews and worked with designers and QA team</li>
           </ul>
           </div>
-          <div class="row">
+          <div class="row resume-row">
           <h3>Education</h3>
           <h4>University of California at Santa Cruz</h4><span>2015</span>
           <h5>Computer Science: Computer Game Design B.S</h5>
@@ -36,43 +41,45 @@ export default class Resume extends React.Component {
             <li>Worked as a grader and tutor for a computer game design course</li>
           </ul>
           </div>
-          <div class="row">
+          <div class="row technical-section">
           <h3>Technical Skillset</h3>
+          <div class="list-wrapper row">
+          <ul class="col-md-4">
           <h4>Languages</h4>
-          <ul>
-            <li>Javascript</li>
-            <li>PHP</li>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>mySQL</li>
-            <li>C#</li>
-            <li>C++</li>
-            <li>Java</li>
+            <li><i class="fa fa-circle-o"></i>Javascript</li>
+            <li><i class="fa fa-circle-o"></i>PHP</li>
+            <li><i class="fa fa-circle-o"></i>HTML5</li>
+            <li><i class="fa fa-circle-o"></i>CSS3</li>
+            <li><i class="fa fa-circle-o"></i>mySQL</li>
+            <li><i class="fa fa-circle-o"></i>C#</li>
+            <li><i class="fa fa-circle-o"></i>C++</li>
+            <li><i class="fa fa-circle-o"></i>Java</li>
           </ul>
-          <h4>Development</h4>
-          <ul>
-            <li>ReactJS</li>
-            <li>Angular</li>
-            <li>NPM</li>
-            <li>Gulp</li>
-            <li>Sass/Less</li>
-            <li>Webpack</li>
-            <li>Browserify</li>
-            <li>ES6</li>
-            <li>Bower</li>
-            <li>AJAX</li>
-            <li>Wordpress</li>
+          <ul class="col-md-4">
+          <h4>Web Development</h4>
+            <li><i class="fa fa-circle-o"></i>ReactJS</li>
+            <li><i class="fa fa-circle-o"></i>Angular</li>
+            <li><i class="fa fa-circle-o"></i>NPM</li>
+            <li><i class="fa fa-circle-o"></i>Gulp</li>
+            <li><i class="fa fa-circle-o"></i>Sass/Less</li>
+            <li><i class="fa fa-circle-o"></i>Webpack</li>
+            <li><i class="fa fa-circle-o"></i>Browserify</li>
+            <li><i class="fa fa-circle-o"></i>ES6</li>
+            <li><i class="fa fa-circle-o"></i>Bower</li>
+            <li><i class="fa fa-circle-o"></i>AJAX</li>
+            <li><i class="fa fa-circle-o"></i>Wordpress</li>
           </ul>
+          <ul class="col-md-4">
           <h4>Tools</h4>
-          <ul>
-            <li>Atom</li>
-            <li>Sublime Text</li>
-            <li>Adobe Creative Suite</li>
-            <li>Filezilla</li>
-            <li>Git/SVN</li>
-            <li>Windows</li>
-            <li>Linux</li>
+            <li><i class="fa fa-circle-o"></i>Atom</li>
+            <li><i class="fa fa-circle-o"></i>Sublime Text</li>
+            <li><i class="fa fa-circle-o"></i>Adobe Creative Suite</li>
+            <li><i class="fa fa-circle-o"></i>Filezilla</li>
+            <li><i class="fa fa-circle-o"></i>Git/SVN</li>
+            <li><i class="fa fa-circle-o"></i>Windows</li>
+            <li><i class="fa fa-circle-o"></i>Linux</li>
           </ul>
+            </div>
           </div>
         </section>
     );
