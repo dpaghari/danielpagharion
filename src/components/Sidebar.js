@@ -13,17 +13,19 @@ export default class Sidebar extends React.Component {
         <div class="sidebar-content">
         <h1>Daniel Pagharion</h1>
         <h2>Web Developer</h2>
-        <img src="/img/danbrand.png" alt="Daniel Branding"/>
+        <img id="danbrand" src="/img/danbrand.png" alt="Daniel Branding"/>
         <div class="social-media">
         <a href="https://www.facebook.com/daniel.pagharion"><i class="fa fa-facebook fa-lg"></i></a>
         <a href="https://www.instagram.com/dannypaguiao/"><i class="fa fa-instagram fa-lg"></i></a>
         <a href="https://www.twitter.com/dannypaguiao/"><i class="fa fa-twitter fa-lg"></i></a>
         <a href="https://www.github.com/dpaghari/"><i class="fa fa-github fa-lg"></i></a>
         </div>
+        <img id="sfbrand" src="/img/sfbrand.png" alt="sfbrand"/>
         <h3>San Francisco, CA</h3>
-        <img src="/img/sfbrand.png" alt="sfbrand"/>
+        <a href="#" id="contact-me-cta">Say Hi</a>
+
+
         </div>
-        <a href="#">Thanks to all the awesome people in my life.</a>
       </section>
     );
   }

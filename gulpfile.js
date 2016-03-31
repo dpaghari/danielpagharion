@@ -7,9 +7,6 @@ var gulp = require('gulp'),
     webpack = require('webpack'),
     WebpackDevServer = require('webpack-dev-server');
 
-gulp.task('webpack', function(callback){
-  var compiler = webpack(require('webpack.config.js'));
-});
 
 gulp.task('scripts', function () {
   // Future processing for scripts
