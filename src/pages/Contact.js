@@ -8,9 +8,9 @@ export default class Contact extends React.Component {
 
   render() {
     return (
-        <div class="wrapper container">
+        <section class="wrapper container">
           <h1>Contact</h1>
-        </div>
+        </section>
     );
   }
 }

@@ -15,6 +15,13 @@ $hoverAtomGray: lighten($atomGray, 45%);
     font-weight: bolder;
 }
 
+@mixin cta-button-ghost() {
+  padding: 20px 60px;
+  background: transparent;
+  color : #000;
+
+}
+
 *, ul {
   margin: 0;
   padding: 0;
@@ -165,15 +172,8 @@ body {
 
   .sidebar-content {
     background: url('../img/greyzz.png');
-    h1 {
-      font-size: 42px;
-    }
-    h2 {
-      font-size: 28px;
-    }
 
     display: flex;
-
     position: fixed;
     right: 0px;
     top: 0px;
@@ -181,7 +181,31 @@ body {
     bottom: 0px;
     flex-direction: column;
     justify-content: space-between;
-    padding: 10px 20px 120px 20px;
+    padding: 25px 20px 120px 20px;
+    h1 {
+      font-size: 46px;
+    }
+    h2 {
+      font-size: 28px;
+    }
+
+  .sidebar-nav-item {
+    display: block;
+    color: #000;
+    background: transparent;
+    border: 2px solid black;
+    padding: 20px 40px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    transition: background 0.5s;
+    margin: 0px 0px;
+  }
+
+  .sidebar-nav-item:hover {
+    background: #777;
+    color: #fff;
+  }
+
     // box-sizing: border-box;
     img {
       margin: 20px auto;
@@ -219,4 +243,26 @@ body {
     color: black;
   }
 
+}
+
+.example-enter {
+  opacity: 0;
+  transition: opacity 0.2s ease-in;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+}
+.example-leave {
+  opacity: 1;
+  transition: opacity 0.2s ease-in;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0;
+}
+
+.link-active {
+  color: #bbbbbb;
+  text-decoration: none;
 }

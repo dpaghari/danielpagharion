@@ -8,7 +8,7 @@ export default class Projects extends React.Component {
 
   render() {
     return (
-      <div class="wrapper">
+      <section class="wrapper">
         <div class="container">
           <h1>Projects</h1>
         </div>
@@ -17,7 +17,7 @@ export default class Projects extends React.Component {
             <div class="project col-md-3">Nocturnum</div>
             <div class="project col-md-3">Project Warp</div>
         </div>
-      </div>
+      </section>
     );
   }
 }
