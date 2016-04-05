@@ -14,8 +14,8 @@ export default class Sidebar extends React.Component {
         <div class="sidebar-content">
         <Link to="/"><h1>Daniel Pagharion</h1></Link>
         <h2>Web Developer</h2>
-        <Link to="projects" class="sidebar-nav-item">Projects</Link>
-        <Link to="hobbies" class="sidebar-nav-item">Things I do</Link>
+        <Link to="/projects" class="sidebar-nav-item">Projects</Link>
+        <Link to="/hobbies" class="sidebar-nav-item">Things I do</Link>
         <Link to="/"><img id="danbrand" src="/img/danbrand.png" alt="Daniel Branding"/></Link>
 
         <div class="social-media">
@@ -26,7 +26,7 @@ export default class Sidebar extends React.Component {
         </div>
         <img id="sfbrand" src="/img/sfbrand.png" alt="sfbrand"/>
         <h3>San Francisco, CA</h3>
-        <Link to="contact" id="contact-me-cta"><i class="fa fa-envelope-o fa-2x"></i></Link>
+        <Link to="/contact" id="contact-me-cta"><i class="fa fa-envelope-o fa-2x"></i><p>Say Hi!</p></Link>
         </div>
       </section>
     );

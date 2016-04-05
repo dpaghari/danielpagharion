@@ -15,12 +15,12 @@ export default class Layout extends React.Component {
     return (
       <div class="site-wrapper">
         <ReactCSSTransitionGroup
-         component="div"
+         component="section"
          transitionName="example"
          transitionEnterTimeout={500}
-         transitionLeaveTimeout={100}
+         transitionLeaveTimeout={500}
          >
-         <div id="content" key={this.props.location.pathname}>
+        <div id="content" key={this.props.location.pathname}>
          {this.props.children}
         </div>
         </ReactCSSTransitionGroup>

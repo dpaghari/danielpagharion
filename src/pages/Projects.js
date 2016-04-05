@@ -8,7 +8,7 @@ export default class Projects extends React.Component {
 
   render() {
     return (
-      <section class="wrapper">
+      <section class="wrapper content">
         <div class="container">
           <h1>Projects</h1>
         </div>
