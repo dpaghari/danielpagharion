@@ -15,7 +15,8 @@ export default class Sidebar extends React.Component {
         <Link to="/"><h1>Daniel Pagharion</h1></Link>
         <h2>Web Developer</h2>
         <Link to="/projects" class="sidebar-nav-item">Projects</Link>
-        <Link to="/hobbies" class="sidebar-nav-item">Things I do</Link>
+        <Link to="/hobbies" class="sidebar-nav-item">Youtube</Link>
+        <Link to="/" class="sidebar-nav-item">Blog</Link>
         <Link to="/"><img id="danbrand" src="/img/danbrand.png" alt="Daniel Branding"/></Link>
 
         <div class="social-media">

@@ -104,11 +104,36 @@ body {
 }
 
 #main {
-  width: 775px;
-  height: 775px;
-  background: url('../img/me.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+  img {
+    margin: 0 auto;
+  }
+
+  .splash-arrow {
+    margin: 0 auto;
+    display: inline;
+  }
+  #about-desc {
+    margin: 200px 50px;
+
+    p {
+      display: inline-block;
+      width: 60%;
+    }
+    img {
+      margin: 0px 70px;
+      display: inline-block;
+      border-radius: 100%;
+      width: 30%;
+      position: relative;
+      top: 200px;
+    }
+  }
+  // width: 775px;
+  // height: 775px;
+  // background: url('../img/me.jpg');
+  // background-attachment: fixed;
+  // background-repeat: no-repeat;
+  // background-size: cover;
 }
 
 .project {
@@ -197,8 +222,8 @@ body {
     padding: 20px 40px;
     font-weight: bolder;
     text-transform: uppercase;
-    transition: background 0.5s;
-    margin: 0px 0px;
+    transition: background,color 0.5s;
+    margin: 10px 0px;
   }
 
   .sidebar-nav-item:hover {
