@@ -1,0 +1,153 @@
+
+// Different Button types
+@mixin cta-button-shadow($btnColor) {
+    margin: 5px auto;
+    display: block;
+    padding: 0px 30px;
+    color: #fff;
+    background: $btnColor;
+    box-shadow: 3px 3px 0 grayscale($btnColor);
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bolder;
+    vertical-align: middle;
+}
+
+@mixin cta-button-ghost() {
+  padding: 10px 60px;
+  background: transparent;
+  color : #000;
+}
+
+@mixin type-animation() {
+  h2{
+  color: #000;
+  font-family: "Courier";
+  font-size: 2em;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 2em;
+  min-height: 2em;
+  //height: 10em;
+  //height: 20em;
+  animation: type 3s steps(60, end);
+  }
+
+  // p:nth-child(2){
+  //   animation: type2 8s steps(60, end);
+  // }
+
+
+  h2 span{
+    animation: blink 1s infinite;
+  }
+
+  @keyframes type{
+
+    0%{width: 0;}
+    50%{width: 0;}
+    100%{ width: 100%; }
+  }
+
+  // @keyframes type2{
+  //   0%{width: 0;}
+  //   50%{width: 0;}
+  //   100%{ width: 100%; }
+  // }
+
+  @keyframes blink{
+    to{opacity: .0;}
+  }
+  ::selection{
+  background: black;
+}
+}
+
+#sidebar {
+  color: #000;
+  width: 20%;
+  .sidebar-content {
+
+    background: url('../img/greyzz.png');
+    display: flex;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    text-align: center;
+    width: 18%;
+    bottom: 0px;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px 20px 120px 20px;
+    h1 {
+      margin: 0;
+      font-size: 2.66em;
+      text-align: left;
+    }
+    h2 {
+      margin: 0;
+      font-size: 1.6em;
+      text-align: left;
+    }
+    // The Experiment
+    // @include type-animation();
+
+  .sidebar-nav-item {
+    text-align: right;
+    display: block;
+    color: #000;
+    background: transparent;
+    border: 2px solid black;
+    padding: 10px 40px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    transition: background,color 0.5s;
+    margin: 10px 0px;
+  }
+
+  .sidebar-nav-item:hover {
+    background: #777;
+    color: #fff;
+  }
+    img {
+      margin: 5px auto;
+    }
+    #danbrand {
+      width: 40%;
+    }
+    #sfbrand {
+      width: 64px;
+      margin-bottom: 0px;
+    }
+    a#contact-me-cta {
+      p {
+        font-size: 22px;
+        margin-top: 5px;
+      }
+      @include cta-button-shadow(#99072d);
+      transition: box-shadow 0.2s;
+    }
+    a#contact-me-cta:hover {
+      background: darken(#99072d, 5%);
+      box-shadow: none;
+    }
+  }
+
+  .social-media {
+    i {
+      margin: 5px 15px;
+
+    }
+    i:hover {
+      cursor: pointer;
+    }
+
+  }
+  a, a:hover, a:visited {
+    text-decoration: none;
+    margin-bottom: 25px;
+    color: black;
+  }
+
+}

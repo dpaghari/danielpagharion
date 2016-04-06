@@ -1,0 +1,34 @@
+#main {
+  img {
+    position:relative;
+    top: 0px;
+    margin: 0 auto;
+  }
+
+  .splash-arrow {
+    margin: 0 auto;
+    display: inline;
+  }
+  #about-desc {
+    margin: 200px 50px;
+
+    p {
+      display: inline-block;
+      width: 60%;
+    }
+    img {
+      margin: 0px 70px;
+      display: inline-block;
+      border-radius: 100%;
+      width: 30%;
+      position: relative;
+      top: 200px;
+    }
+  }
+  // width: 775px;
+  // height: 775px;
+  // background: url('../img/me.jpg');
+  // background-attachment: fixed;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+}

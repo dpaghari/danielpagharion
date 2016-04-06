@@ -27,7 +27,7 @@ export default class Sidebar extends React.Component {
         </div>
         <img id="sfbrand" src="/img/sfbrand.png" alt="sfbrand"/>
         <h3>San Francisco, CA</h3>
-        <Link to="/contact" id="contact-me-cta"><i class="fa fa-envelope-o fa-2x"></i><p>Say Hi!</p></Link>
+        <Link to="/contact" id="contact-me-cta"><i class="fa fa-envelope-o fa-2x"></i><p>Say Hey!</p></Link>
         </div>
       </section>
     );
