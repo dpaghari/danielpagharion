@@ -15,10 +15,10 @@ export default class Sidebar extends React.Component {
           <Link to="/"><h1>Daniel Pagharion</h1></Link>
           <h2>Web Developer</h2>
           <div class="sidebar-nav">
-            <Link to="/projects" class="sidebar-nav-item"><span>Web</span></Link>
-            <Link to="/hobbies" class="sidebar-nav-item"><span>Games</span></Link>
-            <Link to="/" class="sidebar-nav-item"><span>Blog</span></Link>
-            <Link to="/contact" class="sidebar-nav-item"><span>Contact</span></Link>
+            <Link to="/projects" class="sidebar-nav-item"><span>Stuff I worked on</span></Link>
+            <Link to="/hobbies" class="sidebar-nav-item"><span>My Favorite Things</span></Link>
+            <Link to="/" class="sidebar-nav-item"><span>My Thoughts on Things</span></Link>
+            <Link to="/contact" class="sidebar-nav-item"><span>Get in Touch</span></Link>
           </div>
           <Link to="/"><img id="danbrand" src="/img/danbrand.png" alt="Daniel Branding"/></Link>
           <div class="social-media">
