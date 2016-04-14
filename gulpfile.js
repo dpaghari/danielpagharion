@@ -6,21 +6,26 @@ var gulp = require('gulp'),
     cssnano = require('gulp-cssnano'),
     webpack = require('webpack'),
     WebpackDevServer = require('webpack-dev-server');
-
+    // livereload = require('gulp-livereload');
 
 gulp.task('scripts', function () {
   // Future processing for scripts
 });
 
 gulp.task('styles', function () {
-  gulp.src('scss/*.scss')
-    .pipe(sass().on('error', sass.logError))
+  gulp.src('scss/*.sass')
+    .pipe(sass({
+      includePaths: ['./scss', './node_modules/support-for/sass/']
+
+    }).on('error', sass.logError))
     .pipe(cssnano())
     .pipe(gulp.dest('css'));
+    // .pipe(livereload());
 });
 
 gulp.task('sass:watch', function () {
-  gulp.watch('scss/*.scss', ['styles']);
+  // livereload.listen();
+  gulp.watch('scss/*.sass', ['styles']);
 });
 
 gulp.task("webpack", function(callback) {

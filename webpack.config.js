@@ -27,6 +27,15 @@ module.exports = {
           presets: ['react', 'es2015'],
           plugins: ['react-html-attrs', 'transform-class-properties']
         }
+      },
+      {
+        test: /\.css$/, exclude: /\.useable\.css$/, loader: "style!css"
+      },
+      {
+        test: /\.useable\.css$/, loader: "style/useable!css"
+      },
+      {  
+        test: /\.scss$/, loaders: ["style", "css", "sass"]
       }
     ]
   },

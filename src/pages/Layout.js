@@ -18,10 +18,8 @@ export default class Layout extends React.Component {
          component="section"
          transitionName="example"
          transitionEnterTimeout={500}
-         transitionLeaveTimeout={500}>
-        <div id="content" key={this.props.location.pathname}>
+         transitionLeaveTimeout={500} id="content" key={this.props.location.pathname}>
          {this.props.children}
-        </div>
         </ReactCSSTransitionGroup>
         <Sidebar/>
       </div>

@@ -9,8 +9,11 @@ export default class About extends React.Component {
   render() {
     return (
         <section class="wrapper" id="main">
-          <div class="container">
-            <img src="../img/me.jpg"/>
+          <div class="container video-header">
+            <video autoPlay="true" loop="true" muted="true">
+              <source src="../img/dance.webm" type="video/webm"/>
+            </video>
+            <div class="video-overlay"></div>
           </div>
           <div id="about-desc">
           <h1>Just trying to help make the world a better place one line of code at a time...</h1>

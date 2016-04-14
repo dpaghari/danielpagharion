@@ -1,0 +1,111 @@
+@import '0-plugins/plugins-dir'
+@import '1-base/base-dir'
+@import '2-modules/modules-dir'
+@import '3-layouts/layouts-dir'
+
+
+// Partials
+@import vars
+@import placeholders
+// @import bourbon/bourbon
+@import normalize
+
+@import about
+@import projects
+@import resume
+@import sidebar
+
+
+html,
+body,
+ul,
+ol
+  margin: 0
+  padding: 0
+
+body
+  font-family: $font-stack
+  width: 100%
+  height: 100%
+  background: $atomGray
+
+.container
+  width: 960px
+  margin: 0 auto
+
+.site-wrapper
+  width: 100%
+  height: 100%
+  +display(flex)
+
+#content
+  width: 80%
+  flex-grow: 1
+
+#sidebar
+  +display(flex)
+  width: 20%
+
+  .sidebar-content
+    padding: 20px
+    background: url("../img/greyzz.png")
+    +position(fixed)
+    top: 0px
+    right: 0px
+    bottom: 0px
+    flex-direction: column
+    justify-content: center
+    align-items: space-between
+    text-align: center
+
+    .sidebar-nav
+      +display(flex)
+      flex-direction: column
+      margin: 40px 0px
+      .sidebar-nav-item
+        margin: 10px 0px
+        font:
+          size: 20px
+          weight: 500
+        color: black
+        +transition()
+        &:hover
+          color: white
+          background: #777
+      a
+        padding: 10px
+        width: auto
+        border: 2px solid black
+
+    .social-media
+      margin: 40px 0px
+      a
+        padding: 10px
+
+    h1
+      font-size: 40px
+    a
+      text-decoration: none
+      color: #000
+
+
+.example-enter
+  opacity: 0.01
+  transition: opacity 0.3s ease-in
+
+
+.example-enter.example-enter-active
+  opacity: 1
+
+.example-leave
+  opacity: 1
+  transition: opacity 0.3s ease-in
+
+
+.example-leave.example-leave-active
+  opacity: 0.01
+
+
+.link-active
+  color: #bbbbbb
+  text-decoration: none
