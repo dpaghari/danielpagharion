@@ -1,12 +1,30 @@
 #about
   color: white
-  +display(flex)
+  margin: 50px auto
+  // +display(flex)
   justify-content: center
   align-items: center
-  img
-    +size(200px)
-    border-radius: 50%
+  // align-content: center
+  // +display(flex)
+  +outer-container
+  .photo-lockup
+    justify-content: center
+    +display(flex)
+    // +span-columns(12)
+    margin: 0 auto
+    img
+      +size(500px)
+      border-radius: 50%
   .about-desc
     flex-grow: 1
-    +display(flex)
     flex-direction: column
+    // align-items: center
+    +display(flex)
+    h1
+      margin: 50px 0 0
+      font-size: 3em
+      color: #b94658
+    p
+      max-width: 700px
+      text-align: center
+      font-size: 1.5em
