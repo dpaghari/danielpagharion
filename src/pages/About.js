@@ -8,19 +8,29 @@ export default class About extends React.Component {
 
   render() {
     return (
-        <section class="wrapper" id="main">
-          <div id="about">
-            <div class="photo-lockup">
-              <img src="../img/profilepic.jpg"/>
-            </div>
-            <div class="about-desc">
-              <h1>Hey There! I'm Dan</h1>
-              <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              </p>
-            </div>
+      <section class="wrapper" id="main">
+        <div id="about">
+          <div class="splash"></div>
+          <h1>Hey There!</h1>
+          <div class="about-desc">
+          <span>Im Dan</span>
+          <p>
+          I currently work as a front-end web developer in San Francisco, CA.
+          I challenge myself to write elegant code as well as keep up with web tooling and best practices.
+          When I am not telling pixels what to do, I enjoy rock climbing, hip hop dancing, getting lost in the city, finding the tastiest food and enjoy live music.
+          </p>
           </div>
-        </section>
+          <div class="photo-lockup">
+            <img src="../img/profilepic.jpg"/>
+            <ul>
+            <p>Now playing</p>
+              <li>Game: Overwatch</li>
+              <li>Music:J.Cole, The Internet, Kaytranada</li>
+            </ul>
+          </div>
+          <a href="#" class="contact-cta">Say Hi!</a>
+        </div>
+      </section>
     );
   }
 }

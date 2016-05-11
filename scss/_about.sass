@@ -5,10 +5,20 @@
   justify-content: center
   align-items: center
   flex-direction: column
-  margin: 25px auto
+  margin-bottom: 25px
+  width: 100%
+
+
+  .splash
+    width: 100%
+    min-height: 600px
+    background: url("/img/iluvsf.jpg")
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center 72%
 
   img
-    +size(500px)
+    +size(300px)
     border-radius: 50%
   .about-desc
     +display(flex)
@@ -17,12 +27,36 @@
     align-items: center
     flex-grow: 1
     text-align: center
-    margin: 30px auto
+    margin-bottom: 30px
     width: 100%
     background: #5bc7f6
-
-    h1
-      font-size: 2em
     p
-      font-size: 1.5em
       width: 600px
+      font-size: 2em
+
+
+  h1
+    margin: 20px auto
+    font-size: 6em
+    color: #000
+    text-align: left
+
+  span
+    color: #000
+    // display: block
+    font-size: 4.5em
+    width: 600px
+    text-align: center
+  .photo-lockup
+    +display(flex)
+    color: black
+    
+
+    ul
+  .contact-cta
+    margin-top: 20px
+    padding: 20px 40px
+    text-decoration: none
+    background: red
+    color: white
+    font-size: 2em

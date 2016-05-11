@@ -1,5 +1,7 @@
 {
   "esversion" : 6,
   "moz" : true,
-  "node" : true
+  "node" : true,
+  "unused" : true,
+  "laxbreak" : true
 }
