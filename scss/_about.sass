@@ -11,19 +11,20 @@
 
   .splash
     width: 100%
-    min-height: 600px
-    background: url("/img/iluvsf.jpg")
-    background-size: cover
-    background-repeat: no-repeat
+    min-height: 84vh
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/silkscreen.svg"),url("/img/bakerbeach.jpg")
+    background-size: 1px 1px, cover
+    background-repeat: repeat, no-repeat
     background-position: center 72%
+    background-attachment: fixed
 
   img
     +size(300px)
     border-radius: 50%
   .about-desc
     +display(flex)
-    flex-direction: column
-    justify-content: center
+    flex-direction: row
+    justify-content: space-around
     align-items: center
     flex-grow: 1
     text-align: center
@@ -44,15 +45,14 @@
   span
     color: #000
     // display: block
-    font-size: 4.5em
-    width: 600px
-    text-align: center
+    align-self: flex-start
+    font-size: 6.5em
+    width: 200px
+    text-align: left
+
   .photo-lockup
     +display(flex)
     color: black
-    
-
-    ul
   .contact-cta
     margin-top: 20px
     padding: 20px 40px

@@ -3,5 +3,6 @@
   "moz" : true,
   "node" : true,
   "unused" : true,
-  "laxbreak" : true
+  "laxbreak" : true,
+  "multistr" : true
 }

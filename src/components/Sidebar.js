@@ -12,12 +12,11 @@ export default class Sidebar extends React.Component {
     return (
       <section id="sidebar">
           <Link to="/"><h1>Daniel Pagharion</h1></Link>
-          <h2>Web Developer</h2>
+          <Link to="/"><img id="danbrand" src="/img/danbrand.png" alt="Daniel Branding"/></Link>
           <div class="sidebar-nav">
             <Link to="/projects" class="sidebar-nav-item"><span>Stuff I worked on</span></Link>
             <Link to="/contact" class="sidebar-nav-item"><span>Get in Touch</span></Link>
           </div>
-          <Link to="/"><img id="danbrand" src="/img/danbrand.png" alt="Daniel Branding"/></Link>
           <div class="social-media">
             <a target="_blank" href="https://www.github.com/dpaghari/"><i class="fa fa-github fa-lg"></i></a>
             <Link to="/resume"><i class="fa fa-file-text fa-lg"></i></Link>
