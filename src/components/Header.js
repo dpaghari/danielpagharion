@@ -1,6 +1,6 @@
 import React from 'react';
 import NavBar from './NavBar.js';
-import { Link } from 'react-router';
+// import { Link } from 'react-router';
 
 export default class Header extends React.Component {
   constructor(props) {
@@ -12,10 +12,12 @@ export default class Header extends React.Component {
 
   render() {
     return (
-      <section class="row" id="sticky-header">
-      <NavBar/>
-        <h1>Daniel Pagharion</h1>
-        <h2>Web Developer</h2>
+      <section class="header">
+        <div class="brand">
+          <img src="/img/danbrand.png"/>
+          <h1>Daniel Pagharion</h1>
+        </div>
+        <NavBar/>
       </section>
     );
   }

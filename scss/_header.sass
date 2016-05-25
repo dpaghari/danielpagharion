@@ -1,0 +1,27 @@
+.header
+  margin: 80px auto
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  .brand
+    display: flex
+    img
+      height: 150px
+    h1
+      font-size: 6em
+      width: 325px
+      margin: 0
+      line-height: 0.9
+
+  .nav-links
+    margin: 20px
+    a
+      text-decoration: none
+      margin: 0px 20px
+      color: #999
+      font-size: 1.5em
+      +transition
+      &:hover
+        color: black
+        border-bottom: 1px solid $font-color

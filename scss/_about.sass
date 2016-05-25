@@ -1,6 +1,6 @@
 // About me styles
 #about
-  color: #fff
+  color: $font-color
   +display(flex)
   justify-content: center
   align-items: center
@@ -12,51 +12,65 @@
   .splash
     width: 100%
     min-height: 84vh
-    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/silkscreen.svg"),url("/img/bakerbeach.jpg")
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/silkscreen.svg"),url("../img/bakerbeach.jpg")
     background-size: 1px 1px, cover
     background-repeat: repeat, no-repeat
     background-position: center 72%
     background-attachment: fixed
 
   img
-    +size(300px)
+    +size(150px)
     border-radius: 50%
   .about-desc
     +display(flex)
-    flex-direction: row
+    padding: 20px
+    flex-direction: column
     justify-content: space-around
     align-items: center
     flex-grow: 1
+    font-family: $font-body-stack
     text-align: center
     margin-bottom: 30px
     width: 100%
-    background: #5bc7f6
+    // box-shadow: 2px 2px 2px #222
     p
       width: 600px
-      font-size: 2em
+      font-size: 1.3em
+      color: $font-color
+      .dan-copy
+        text-align: left
+        font-size: 1.6em
+      .about-link
+        color: #f16134
+        text-decoration: none
+    img
+      +size(350px)
 
 
   h1
+    width: 325px
     margin: 20px auto
     font-size: 6em
-    color: #000
+    color: $font-color
     text-align: left
 
   span
-    color: #000
-    // display: block
+    color: $font-color
     align-self: flex-start
-    font-size: 6.5em
     width: 200px
     text-align: left
 
   .photo-lockup
     +display(flex)
-    color: black
+    color: $font-color
+
   .contact-cta
-    margin-top: 20px
-    padding: 20px 40px
-    text-decoration: none
-    background: red
-    color: white
-    font-size: 2em
+    @extend %material-button
+    i
+      margin-left: 10px
+    &:hover
+      border: 1px solid #c22b2b
+      background: rgb(193, 61, 61)
+      color: white
+    &:hover span
+      color: white

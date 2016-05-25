@@ -10,18 +10,14 @@ export default class About extends React.Component {
     return (
       <section class="wrapper" id="main">
         <div id="about">
-          <div class="splash"></div>
-          <h1>Hey There!</h1>
           <div class="about-desc">
-          <span class="greeting animate">I'm Dan</span>
           <p>
           I currently work as a front-end web developer in San Francisco, CA.
-          I challenge myself to write elegant code as well as keep up with web tooling and best practices.
-          When I am not telling pixels what to do, I enjoy rock climbing, hip hop dancing, getting lost in the city, finding the tastiest food, enjoying live music and becoming more of a morning person.
+          I challenge myself to write elegant code as well as to keep up with the latest in web tooling and best practices.
+          When I am not telling pixels what to do, I enjoy rock climbing, <a href="#" class="about-link">hip hop dancing</a>, getting lost in the city, finding the tastiest food, enjoying live <a href="#" class="about-link">music</a> and becoming more of a morning person.
           </p>
-          <img src="../img/profilepic.jpg"/>
           </div>
-          <a href="#" class="contact-cta">Say Hi!</a>
+            <a href="#" class="contact-cta"><span>Say Hi!</span><i class="fa fa-envelope-o fa-fw"></i></a>
         </div>
       </section>
     );
