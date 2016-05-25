@@ -10,7 +10,7 @@ module.exports = {
   ],
   output: {
     path: path.join(__dirname, 'public'),
-    filename: 'bundle.js'
+    filename: 'dan.js'
   },
   resolve: {
     modulesDirectories: ['node_modules', 'src'],
@@ -34,7 +34,7 @@ module.exports = {
       {
         test: /\.useable\.css$/, loader: "style/useable!css"
       },
-      {  
+      {
         test: /\.scss$/, loaders: ["style", "css", "sass"]
       }
     ]

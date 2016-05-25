@@ -15,8 +15,8 @@ export default class NavBar extends React.Component {
             <div class="nav-links">
             <Link to="/">About</Link>
             <Link to="projects">Projects</Link>
-            <Link to="contact">Contact Me</Link>
-            <Link to="resume">Resume</Link>
+            <Link to="contact">Now Playing</Link>
+            <a href="assets/Resume.pdf">Resume</a>
             </div>
           </nav>
       );
@@ -27,4 +27,5 @@ export default class NavBar extends React.Component {
     var currState = !this.state.active;
     this.setState({ active: currState });
   }
+
 }
