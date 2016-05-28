@@ -8,17 +8,23 @@ export default class Contact extends React.Component {
 
   render() {
     return (
-        <section class="wrapper container">
-          <h1>Contact</h1>
+        <section class="wrapper contact">
+          <h1>Get in Touch!</h1>
+          <div class="form-card">
           <form>
+            <fieldset class="senderinfo">
             <label for="name">Name:</label>
-            <input type="text" name="name"></input><br/>
+            <input type="text" name="name"></input>
             <label for="email">Email:</label>
-            <input type="text"></input><br/>
+            <input type="text" placeholder="newguy@example.com"></input>
+            </fieldset>
+            <fieldset class="sendermessage">
             <label for="message">Message:</label>
             <textarea></textarea><br/>
-            <input type="submit"></input>
+            </fieldset>
+            <a href="#" id="submit" class="contact-cta">Send<i class="fa fa-envelope-o fa-fw"></i></a>
           </form>
+          </div>
         </section>
     );
   }

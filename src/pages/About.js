@@ -17,7 +17,7 @@ export default class About extends React.Component {
           When I am not telling pixels what to do, I enjoy rock climbing, <a href="#" class="about-link">hip hop dancing</a>, getting lost in the city, finding the tastiest food, enjoying live <a href="#" class="about-link">music</a> and becoming more of a morning person.
           </p>
           </div>
-            <a href="#" class="contact-cta"><span>Say Hi!</span><i class="fa fa-envelope-o fa-fw"></i></a>
+            <a href="#/contact" class="contact-cta"><span>Say Hi!</span><i class="fa fa-envelope-o fa-fw"></i></a>
         </div>
       </section>
     );
