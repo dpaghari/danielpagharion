@@ -5,6 +5,7 @@
   h1
     font-family: $font-body-stack
     font-size: 2em
+    font-weight: 200
   .form-card
     display: flex
     flex-direction: column
@@ -25,20 +26,20 @@
       label
         font-family: $font-body-stack
         font-weight: 100
-        font-size: 1.2em
+        font-size: 1em
       textarea
         resize: none
         height: 5em
       #submit
-        font-size: 2em
+        font-size: 1.2em
         text-align: center
         @extend %material-button
         background: rgb(193, 61, 61)
         color: white
         box-shadow: 0px 3px 0px 0px #ccc
-        transition: 1s all
+        transition: 2s all
         i
-          margin-left: 20px
+          margin-left: 10px
         &:hover
           border: 1px solid #c22b2b
           box-shadow: inset 0px 0px 40px rgb(159, 38, 38)
