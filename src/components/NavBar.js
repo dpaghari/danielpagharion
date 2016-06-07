@@ -1,31 +1,22 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { IndexLink, Link } from 'react-router';
 
 export default class NavBar extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      active: false
-    };
   }
 
   render() {
       return (
-          <nav id="site-nav" class="active">
+          <nav id="site-nav">
             <div class="nav-links">
-            <Link to="/">About</Link>
-            <Link to="projects">Projects</Link>
-            <Link to="nowplaying">Now Playing</Link>
-            <a href="assets/Resume.pdf">Resume</a>
+            <IndexLink activeClassName="active" to="/">About</IndexLink>
+            <Link activeClassName="active" to="/projects">Projects</Link>
+            <Link activeClassName="active" to="/nowplaying">Now Playing</Link>
+            <Link activeClassName="active" to="/contact">Contact</Link>
+            <a href="assets/Resume.pdf">Resumè</a>
             </div>
           </nav>
       );
   }
-
-  toggleActive(e) {
-    e.preventDefault();
-    var currState = !this.state.active;
-    this.setState({ active: currState });
-  }
-
 }

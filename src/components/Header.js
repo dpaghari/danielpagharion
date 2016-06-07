@@ -5,20 +5,20 @@ import NavBar from './NavBar.js';
 export default class Header extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      //active: false
-    };
   }
 
   render() {
+    // console.log(this.state);
     return (
-      <section class="header">
+      <header class="header">
         <div class="brand">
           <img src="/img/danbrand.png"/>
           <h1>Daniel Pagharion</h1>
         </div>
+
         <NavBar/>
-      </section>
+
+      </header>
     );
   }
 }

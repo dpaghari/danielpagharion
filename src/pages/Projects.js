@@ -13,17 +13,19 @@ export default class Projects extends React.Component {
           <div class="project">
             <a class="project-title" href="#"><i class="fa fa-thumb-tack fa-fw"></i>danielpagharion.com</a>
             <div class="project-details">
-              <p>Portfolio website implemented and designed using ReactJS and Sass. Managed using npm and git.</p>
+
+                <p>Portfolio website implemented and designed using ReactJS and Sass. Managed using npm and git.</p>
+
+
                 <a href="#"><img src="../img/screenshots/portfolio.png"/></a>
             </div>
           </div>
           <div class="project">
             <a class="project-title" href="#"><i class="fa fa-thumb-tack fa-fw"></i>Newtab Nuevo</a>
             <div class="project-details">
-              <p>Opinionated New Tab Chrome Extension to afford users extra functionality when they open a new tab on the Chrome Web Browser.</p>
-
+              <p>Fun side project for learning the chrome extension api.<br/>
+              Opinionated New Tab Chrome Extension to afford users extra functionality when they open a new tab on the Chrome Web Browser.</p>
                 <a href="#"><img src="../img/screenshots/newtabnuevo.jpg"/></a>
-
             </div>
           </div>
           <div class="project">

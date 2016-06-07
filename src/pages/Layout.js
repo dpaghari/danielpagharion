@@ -2,29 +2,35 @@ import React from 'react';
 import Header from '../components/Header';
 // import Sidebar from "../components/Sidebar";
 // import NavBar from '../components/NavBar';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+// import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import ReactCSSTransitionReplace from "react-css-transition-replace";
 
 export default class Layout extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+
+    this.state = {
+
+    };
   }
 
   render() {
     return (
       <div class="site-wrapper">
-        <ReactCSSTransitionGroup
+
+        <Header/>
+        <ReactCSSTransitionReplace
          component="section"
-         transitionName="example"
-         transitionEnterTimeout={300}
-         transitionLeaveTimeout={300} id="content">
-         <Header key="header"/>
+         transitionName="fade-wait"
+         transitionEnterTimeout={1000} transitionLeaveTimeout={2000}
+          id="content">
          <div key={this.props.location.pathname}>
            {this.props.children}
          </div>
-        </ReactCSSTransitionGroup>
-
+        </ReactCSSTransitionReplace>
+        
       </div>
+
     );
   }
 }

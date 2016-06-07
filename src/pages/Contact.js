@@ -20,7 +20,7 @@ export default class Contact extends React.Component {
             </fieldset>
             <fieldset class="sendermessage">
             <label for="message">Message:</label>
-            <textarea name="message" placeholder="Dan I realized something...you're really cool"></textarea><br/>
+            <textarea name="message" placeholder="Dan, I realized something...you're really cool"></textarea><br/>
             </fieldset>
             <button type="submit" class="contact-cta" id="submit">Send<i class="fa fa-send fa-lg fa-fw"></i></button>
           </form>
