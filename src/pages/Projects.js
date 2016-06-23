@@ -21,11 +21,19 @@ export default class Projects extends React.Component {
             </div>
           </div>
           <div class="project">
-            <a class="project-title" href="#"><i class="fa fa-thumb-tack fa-fw"></i>Newtab Nuevo</a>
+            <a class="project-title" href="https://github.com/dpaghari/newtab_nuevo"><i class="fa fa-thumb-tack fa-fw"></i>Dashtab</a>
+            <span class="coming-soon">Ready for Installation at the Chrome Webstore Soon!</span>
             <div class="project-details">
               <p>Fun side project for learning the chrome extension api.<br/>
               Opinionated New Tab Chrome Extension to afford users extra functionality when they open a new tab on the Chrome Web Browser.</p>
-                <a href="#"><img src="../img/screenshots/newtabnuevo.jpg"/></a>
+                <a href="#"><img src="../img/screenshots/dashtab.png"/></a>
+            </div>
+          </div>
+          <div class="project">
+            <a class="project-title" href="http://wallpapers.fm/"><i class="fa fa-thumb-tack fa-fw"></i>Wallpapers.fm</a>
+            <div class="project-details">
+              <p>New Tab Chrome Extension work project.  Provides users with a gallery of curated and high resolution wallpapers in their Chrome New Tab that users can browse and even save them for their own use.</p>
+              <a href="http://wikideals.com/"><img src="../img/screenshots/wallpapersfm.png"/></a>
             </div>
           </div>
           <div class="project">
@@ -40,7 +48,7 @@ export default class Projects extends React.Component {
           <div class="project">
             <a class="project-title" href="http://smashlounge.com/"><i class="fa fa-thumb-tack fa-fw"></i>Smashlounge.com</a>
             <div class="project-details">
-              <p>Aggregates frame data for the various characters and presents it in an intuitive way.  Helped with Front End Design and Development as well as test new features. </p>
+              <p>Aggregates frame data for the various characters and presents it in an intuitive way.  Helped with Front End Design and Development as well as testing. </p>
 
               <a href="http://smashlounge.com/"><img src="../img/screenshots/smashlounge.jpg"/></a>
 
@@ -49,7 +57,7 @@ export default class Projects extends React.Component {
           <div class="project">
             <a class="project-title" href="http://driving.directions.cm/lp/"><i class="fa fa-thumb-tack fa-fw"></i>Directions.cm</a>
             <div class="project-details">
-              <p>Driving directions website implemented using ReactJS and Google Maps and Places API.</p>
+              <p>A work project involving a driving directions website implemented using ReactJS and Google Maps and Places API.</p>
 
                 <a href="http://driving.directions.cm/lp/"><img src="../img/screenshots/directionscm.jpg"/></a>
 

@@ -72,14 +72,26 @@
 
   .contact-cta
     @extend %material-button
+    border: 2px solid rgb(193, 61, 61)
     background: rgb(193, 61, 61)
+    // background: white
     color: white
     box-shadow: 0px 3px 0px 0px #ccc
-    transition: 1s all
+    transition: 0.1s all
+    border-radius: 10px
     span
       color: white
+      // color: rgb(193, 61, 61)
+      // color: white
     i
       margin-left: 10px
     &:hover
-      border: 1px solid #c22b2b
+
+      // border: 3px solid #c22b2b
+      // background: white
+      // border-radius: 10%
       box-shadow: inset 0px 0px 40px rgb(159, 38, 38)
+      span
+        // color: rgb(193, 61, 61)
+      i
+        // color: rgb(193, 61, 61)
