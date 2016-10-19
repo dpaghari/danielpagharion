@@ -1,15 +1,26 @@
 .nowplaying
   display: flex
-  flex-direction: column
+  flex-direction: row
+  flex-wrap: wrap
   align-items: center
-  i
-    margin-right: 10px
-  .item-panel
-    background: white
-    font-family: $font-body-stack
-    font-size: 1.2em
+  .blurb
     width: 30%
-    border: 1px solid #eee
-    padding: 20px
-    box-shadow: 0px 3px 1px 0px #ccc
-    margin-bottom: 10px
+    a
+      height: auto
+      width: 300px
+      // height: 400px
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      padding: 5px
+      border: 1px solid #333
+      box-shadow: 0px 3px 3px #555
+      .blurb-head
+      display: flex
+      justify-content: space-around
+      align-items: stretch
+      padding: 5px
+      i
+        margin: 0 20px
+      .blurb-body
