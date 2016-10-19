@@ -35,6 +35,7 @@ export default class Blurb extends React.Component {
           <i class={catIcon} aria-hidden="true"></i>
           <h3>{this.props.headline}</h3>
         </div>
+        <hr/>
         <div class="blurb-body">
           <img class="blurb-poster" src={this.props.imgURL}/>
         </div>

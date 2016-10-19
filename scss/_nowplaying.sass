@@ -5,10 +5,12 @@
   align-items: center
   .blurb
     width: 30%
+    height: 325px
+    margin: 10px auto
     a
-      height: auto
-      width: 300px
-      // height: 400px
+      color: #555
+      width: 100%
+      font-size: 11px
       display: flex
       flex-direction: column
       justify-content: center
@@ -16,11 +18,25 @@
       padding: 5px
       border: 1px solid #333
       box-shadow: 0px 3px 3px #555
+      height: 100%
       .blurb-head
-      display: flex
-      justify-content: space-around
-      align-items: stretch
-      padding: 5px
-      i
-        margin: 0 20px
+        height: 10%
+        display: flex
+        width: 100%
+        justify-content: flex-start
+        // align-items: stretch
+        padding: 5px
+        i
+          margin: 0 20px
+          font-size: 1.8em
       .blurb-body
+        height: 85%
+        img
+          max-width: 100%
+          max-height: 250px
+      hr
+        width: 85%
+        color: black
+        background: black
+        height: 2px
+        margin-bottom: 20px
