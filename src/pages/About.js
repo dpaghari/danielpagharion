@@ -20,6 +20,7 @@ export default class About extends React.Component {
           <div>
             <a href="https://twitter.com/dannypaguiao" class="social"><i class="fa fa-twitter fa-fw"></i></a>
             <a href="https://github.com/dpaghari" class="social"><i class="fa fa-github fa-fw"></i></a>
+            <a href="https://instagram.com/dannypaguiao" class="social"><i class="fa fa-instagram fa-fw"></i></a>
           </div>
           </div>
             <a href="#/contact" class="contact-cta"><span>Say Hi!</span><i class="fa fa-envelope fa-fw"></i></a>
