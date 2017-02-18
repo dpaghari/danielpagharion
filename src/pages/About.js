@@ -15,7 +15,7 @@ export default class About extends React.Component {
           <p>
           I currently work as a front-end web developer in San Francisco, CA.
           I challenge myself to write elegant code, as well as to keep up with the latest in web tooling and best practices.
-          When I am not bossing pixels around, I enjoy rock climbing, <a href="https://www.youtube.com/playlist?list=PLHJU8dnZzNBDyFVL2Tnqm0cxjVYpKX-KC" target="_blank" class="about-link">hip hop dancing</a>, getting lost in the city, finding the tastiest food, listening to live music and becoming more of a morning person.
+          When I am not bossing pixels around, I enjoy rock climbing, <a href="https://www.youtube.com/playlist?list=PLHJU8dnZzNBDyFVL2Tnqm0cxjVYpKX-KC" target="_blank" class="about-link">hip hop dancing</a>, getting lost in the city, finding the tastiest food, <a href="https://goo.gl/photos/aJh8oxRfaoUnCHWb9" class="about-link">photography</a>, listening to live music and becoming more of a morning person.
           </p>
           <div>
             <a href="https://twitter.com/dannypaguiao" class="social"><i class="fa fa-twitter fa-fw"></i></a>
