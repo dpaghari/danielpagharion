@@ -24,11 +24,11 @@ export default class Layout extends React.Component {
          transitionName="fade-wait"
          transitionEnterTimeout={1000} transitionLeaveTimeout={2000}
           id="content">
-         <div key={this.props.location.pathname}>
-           {this.props.children}
-         </div>
+          <div key={this.props.location.pathname}>
+            {this.props.children}
+          </div>
         </ReactCSSTransitionReplace>
-        
+
       </div>
 
     );

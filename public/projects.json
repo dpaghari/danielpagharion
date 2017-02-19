@@ -1,0 +1,44 @@
+[
+  {
+    "project_title" : "danielpagharion.com",
+    "project_img" : "../img/screenshots/portfolio.png",
+    "project_details" : "Portfolio website implemented and designed using ReactJS and Sass. Really served as a guinea pig for learning ReactJS",
+    "project_tools" : "js,sass,webpack,react,es6",
+    "project_url" : "http://danielpagharion.com"
+  },
+  {
+    "project_title" : "Newtab Nuevo",
+    "project_img" : "../img/screenshots/dashtab.png",
+    "project_details" : "Fun side project for learning the chrome extension API and playing around with user interface layouts.Opinionated New Tab Chrome Extension to afford users extra functionality when they open a new tab on the Chrome Web Browser.",
+    "project_tools" : "js,jquery,sass,gulp,browserify,es6",
+    "project_url" : "https://github.com/dpaghari/newtab_nuevo"
+  },
+  {
+    "project_title" : "Wallpapers.fm",
+    "project_img" : "../img/screenshots/wallpapersfm.png",
+    "project_details" : "New Tab Chrome Extension work project.  Provides users with a gallery of curated and high resolution wallpapers in their Chrome New Tab that users can browse and even save them for their own use.",
+    "project_tools" : "js,sass,gulp,browserify,es6,jquery,php",
+    "project_url" : "http://wallpapers.fm"
+  },
+  {
+    "project_title" : "Wikideals.com",
+    "project_img" : "../img/screenshots/wikideals.png",
+    "project_details" : "Consumer Goods website that aggregates price listings from merchants and manufacturers and acts as an effective price comparison tool.  Displayed product information on a page in an elegant yet familiar way.",
+    "project_tools" : "js,php,css,wordpress,jquery",
+    "project_url" : "http://wikideals.com"
+  },
+  {
+    "project_title" : "Nocturnum",
+    "project_img" : "../img/screenshots/nocturnum.png",
+    "project_details" : "Senior exit game project, created using Unity3D over a span of 6 months.  Acted as project lead and worked on gameplay programming, game design, project management and recruiting artists.  Awarded with Design Innovation and Audio Award at Annual Game Design Senior Exit Project Showcase.",
+    "project_tools" : "unity,c#",
+    "project_url" : "https://www.dropbox.com/s/j4ygmaf8her6dr0/Nocturnum7.4.7z?dl=0"
+  },
+  {
+    "project_title" : "Project Warp",
+    "project_img" : "../img/screenshots/projectwarp.png",
+    "project_details" : "First Game created using an HTML5 Framework powered by MelonJS. Acted as lead gameplay programmer. Awarded with Peer Choice Award. ",
+    "project_tools" : "js,canvas",
+    "project_url" : "http://danielpagharion.com/project_warp/"
+  }
+]

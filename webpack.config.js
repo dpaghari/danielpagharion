@@ -6,11 +6,12 @@ module.exports = {
   entry: [
     'webpack-dev-server/client?http://127.0.0.1:8080/',
     'webpack/hot/only-dev-server',
-    './src'
+    './scss/style.sass',
+    './src/index.js'
   ],
   output: {
     path: path.join(__dirname, 'public'),
-    filename: 'dan.js'
+    filename: 'bundle.min.js'
   },
   resolve: {
     modulesDirectories: ['node_modules', 'src'],
@@ -28,14 +29,15 @@ module.exports = {
           plugins: ['react-html-attrs', 'transform-class-properties']
         }
       },
+      // {
+      //   test: /\.css$/, exclude: /\.useable\.css$/, loader: "style!css"
+      // },
+      // {
+      //   test: /\.useable\.css$/, loader: "style/useable!css"
+      // },
+      { test: /\.(jpe?g|png|gif|svg)$/i, loader: "file-loader?name=[path][name].[ext]" },
       {
-        test: /\.css$/, exclude: /\.useable\.css$/, loader: "style!css"
-      },
-      {
-        test: /\.useable\.css$/, loader: "style/useable!css"
-      },
-      {
-        test: /\.scss$/, loaders: ["style", "css", "sass"]
+        test: /\.sass$/, loaders: ["style", "css", "sass"]
       }
     ]
   },

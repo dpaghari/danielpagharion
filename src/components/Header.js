@@ -12,9 +12,14 @@ export default class Header extends React.Component {
     return (
       <header class="header">
         <div class="brand">
-          <img src="/img/danbrand.png"/>
-          <h1>Daniel Pagharion</h1>
+          <img src="/img/profile.jpg"/>
+          <div>
+            <h1>Daniel Pagharion</h1>
+            <h2>Web Developer</h2>
+            <h3>San Francisco Bay Area</h3>
+          </div>
         </div>
+        <div class="overlay"></div>
 
         <NavBar/>
 

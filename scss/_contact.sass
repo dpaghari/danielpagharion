@@ -2,10 +2,7 @@
   display: flex
   flex-direction: column
   align-items: center
-  h1
-    font-family: $font-body-stack
-    font-size: 2em
-    font-weight: 200
+
   .form-card
     display: flex
     flex-direction: column
@@ -13,33 +10,51 @@
     border: 1px solid #eee
     width: 700px
     background: white
-    padding: 25px
+    // padding: 25px
     box-shadow: 0px 2px 0px 0px #ccc
+    .form-head
+      width: 100%
+      background: $matBrownAccent
+      padding: $space/2
+      text-align: center
+      box-shadow: 0px 1px 1px $matBrownIdle
+      border-bottom: 1px solid $matBrownIdle
+      i
+        color: white
+        font-size: 2em
     form
       display: flex
       flex-direction: column
-      width: 85%
+      padding: $space
+      // justify-content: center
+      align-items: center
+      width: 100%
+      color: #555
+      fieldset
+        width: 100%
       .senderinfo
         input
           padding: 10px 10px
+          border-width: 0.5px
+          border-color: #cdcdcd
+          box-shadow: 0px 1px 1px #cdcdcd
 
       label
         font-family: $font-body-stack
         font-weight: 100
         font-size: 1em
       textarea
+        border-width: 0.5px
+        border-color: #cdcdcd
+        box-shadow: 0px 1px 1px #cdcdcd
         resize: none
         height: 5em
       #submit
-        font-size: 1.2em
         text-align: center
         @extend %material-button
         background: rgb(193, 61, 61)
         color: white
         box-shadow: 0px 3px 0px 0px #ccc
-        transition: 2s all
+        width: 300px
         i
           margin-left: 10px
-        &:hover
-          border: 1px solid #c22b2b
-          box-shadow: inset 0px 0px 40px rgb(159, 38, 38)

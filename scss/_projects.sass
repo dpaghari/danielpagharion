@@ -1,41 +1,60 @@
-.projects
+.projects-wrapper
   display: flex
-  flex-direction: column
-  align-items: center
-  .projects-wrapper
+  flex-wrap: wrap
+  justify-content: center
+  width: 100%
+  padding: 20px
+  .projects
     display: flex
+    flex-direction: row
     flex-wrap: wrap
     justify-content: center
     width: 100%
-    padding: 20px
     .project
-      .coming-soon
-        color: rgb(222, 164, 85)
-        font-size: 1.5em
-
-      background: white
-      width: 80%
-      display: flex
+      display: block
+      width: 30%
+      height: 300px
+      background-position: center center
+      margin: $space/2
       flex-direction: column
-      padding: 20px
-      border: 1px solid #eee
-      margin-bottom: 10px
-      box-shadow: 0px 2px 1px #ccc
-      .project-title
-        font-size: 2.6em
-        color: $font-color
-      .project-details
+      position: relative
+      border: 1px solid $matBrownHover
+      background-size: cover
+      background-repeat: no-repeat
+      box-shadow: 0px 1px 1px $matBrownHover
+      transition: 0.3s all
+      a
+        padding: $space/2
         display: flex
-        flex-wrap: no-wrap
+        position: absolute
+        justify-content: center
+        flex-direction: column
         align-items: center
-        p
-          font-family: $font-body-stack
-          width: 65%
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        background: $matBrownRGBA
+        width: 100%
+        height: 100%
+        transition: 0.5s all
+        color: white
+        text-align: center
+        opacity: 0
+        h4
+          padding: $space/4
+          border-bottom: 1px solid #fff
+        .tools-wrapper
+          display: flex
+          justify-content: center
+          align-items: center
+          .tool
+            width: $space
+            height: $space
+            margin: 0px $space/6
+
+      &:hover
+        transform: scale(1.1)
+        box-shadow: 0px 3px 10px $matBrownHover
         a
-          width: 30%
-          img
-            margin-left: 10px
-            width: 100%
-            height: 100%
-            max-height: 250px
-            box-shadow: 0px 2px 1px #ccc
+          opacity: 0.95

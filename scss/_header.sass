@@ -1,34 +1,93 @@
 .header
-  margin-top: 80px
-  margin-bottom: 40px
   display: flex
   flex-direction: column
   justify-content: center
   align-items: center
+  width: 100%
+  font-size: 1em
+  padding: $space*2 $space $space/2
+  border-bottom: 1px solid $matBrownIdle
+  box-shadow: 0px 1px 1px $matBrownIdle
+  background: url("../img/bay.jpg")
+  background-size: cover
+  margin-bottom: $space * 2
+  position: relative
+  background-position-y: 235px
+  .overlay
+    background: $matBrownRGBA
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    height: 100%
+
   .brand
     display: flex
+    width: 100%
+    justify-content: center
+    align-items: center
+    z-index: 10
     img
-      height: 160px
+      height: 125px
+      border-radius: 50%
+      margin-right: $space
+      border: 2px solid $matBrownHover
+      box-shadow: 0px 1px 1px $matBrownHover
+    h1, h2, h3
+      color: #fff
     h1
       font-family: $font-stack
-      font-size: 6em
-      width: 325px
-      margin: 0
-      line-height: 0.9
+      font-size: 2.5em
+      width: 100%
+      font-weight: normal
+      margin-bottom: 0
+      line-height: 1em
+    h2
+      font-size: 1.5em
+      font-weight: 300
+      margin-top: $space/4
+      margin-bottom: 0
+
+
+    h3
+      font-size: 1em
+      font-weight: lighter
+      margin-bottom: 0
+      margin-top: $space/3
+
+
 
   .nav-links
-    margin-top: 20px
-    margin-left: 28px
+    margin-top: $space
+    margin-left: $space
     a
       text-decoration: none
-      margin: 0px 28px
-      color: #999
-      font-size: 1.5em
+      margin: 0px $space
+      color: $matBrownHover
+      font-size: 1em
       position: relative
       transition: 0.4s color
       padding: 5px 0px
     a:hover
-      color: black
+      color: #fff
     a.active
-      border-bottom: 3px solid black
-      color: black
+      border-bottom: 3px solid #fff
+      color: #fff
+
+
+// this are mobile styles
+// @include break-sm
+//   .header
+//     display: flex
+//     background: red
+//     flex-direction: row
+//     width: 100%
+//     justify-content: flex-start
+//     .brand
+//       h1
+//       font-size: 1em
+//       width: 100%
+//     .nav-links
+//       a
+//         font-size: 1.5em

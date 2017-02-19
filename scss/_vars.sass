@@ -9,7 +9,44 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway|Roboto+Mono|Montserrat|Pridi|Work+Sans|Mitr)
 
 
-$font-stack: BebasNeue, $font-stack-helvetica, sans-serif
+$font-stack: 'Montserrat', $font-stack-helvetica, sans-serif
 
 $font-body-stack: "Montserrat", sans-serif
-$font-color: #333
+$font-color: #555
+
+$space: 24px
+
+// media query breakpoint variables
+
+// 600px iphone
+$media-sm : 37.5em
+// 768px ipad
+$media-md : 48em
+// 1000px destop
+$media-lg : 62.5em
+//1600px huge
+$media-xl : 100em
+
+
+// media query mixis
+@mixin break-sm
+  @media (min-width: #{$media-sm})
+    @content
+
+
+
+@mixin break-med
+  @media (min-width: #{$media-md})
+    @content
+
+
+
+@mixin break-lg
+  @media (min-width: #{$media-lg})
+    @content
+
+
+
+@mixin break-xl
+  @media (min-width: #{$media-xl})
+    @content
