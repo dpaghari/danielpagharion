@@ -79,6 +79,10 @@ export default class Project extends React.Component {
           let canvasImg = `${icon_dir}/html.png`;
           tool_img_paths.push(canvasImg);
           break;
+        case "php":
+          let phpImg = `${icon_dir}/php.png`;
+          tool_img_paths.push(phpImg);
+          break;
       }
 
     });
